@@ -1,14 +1,19 @@
 <% include ../partials/header %>
+  <style>
+    .active{
+      border: 0
+    }
+  </style>
   <div class="container">
     <div class="card-header" style="background-color: white;font-size: 20px; margin-top: 4.5rem">
       <span>
-          <span style="font-size: 18px; color: black;display: flex; justify-content: center">BloggersInc.</span>   
+          <span id="projects" style="font-size: 18px; color: black;display: flex; justify-content: center">BloggersInc.</span>   
       </span>
     </div> 
     <div class="card-block special-card" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <ol class="carousel-indicators" style="border: 0">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>

@@ -1,5 +1,5 @@
 .navbar-dark .navbar-nav .nav-link:hover {
-    background-color: black 
+    color: white
 }
 html{
     scroll-behavior: smooth;
@@ -100,6 +100,9 @@ i.icon.comments.outline:before {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+  .active{
+      border-bottom: 2px solid blue
   }
   ::-webkit-scrollbar {
     width: 13px;
