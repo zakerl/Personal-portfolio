@@ -1,0 +1,24 @@
+{
+  "name": "porfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Labeeb Hasan Zaker",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.1.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "imap": "^0.8.19",
+    "nodemailer": "^6.3.0",
+    "nodemailer-mailgun-transport": "^1.4.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "semantic-ui-icon": "^2.3.3"
+  }
+}

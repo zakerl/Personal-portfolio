@@ -1,0 +1,50 @@
+<% include ../partials/header %>
+  <div class="container">
+    <div class="card-header" style="background-color: white;font-size: 20px; margin-top: 4.5rem">
+      <span>
+          <span style="font-size: 18px; color: black;display: flex; justify-content: center">CampInsiders</span>   
+      </span>
+    </div> 
+    <div class="card-block special-card" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Images/CampInsiders.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/CampInsiders2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/CampInsiders3.PNG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <p style="line-height: 2.5rem; text-align: center">
+        <span style="background-color:red; border-radius: 7px;padding: 8px">HTML5</span>
+        <span style="background-color:  #EEE8AA; border-radius: 7px;padding: 8px">Javascript</span>
+        <span style="background-color: 	green; border-radius: 7px;padding: 8px">Node.JS</span>
+        <span style="background-color: 	#563d7c; border-radius: 7px;padding: 8px">Bootstrap4</span>
+        <span style="background-color: 	green; border-radius: 7px;padding: 8px">MongoDB</span>
+        <span style="background-color: 	blue; border-radius: 7px;padding: 8px">CSS</span>
+      </p>
+      This is the first full-stack website I have made from scratch. This site allows users to edit and create campgrounds, give reviews, and also edit and create comments on the campgrounds,all this data are stored in non relational database created by MongoDB. Express library was used to involve the routes needed to make html requests. I implemented PassportJS for user authentication and the website also involves restful routing. The front end is done, the backend needs some final touches. A responsive search engine was implemented to search for any available campgrounds. I also had to include a google maps API just so that when user could add a location that would be displayed on google maps.     
+      <p style="margin-bottom: 0;margin-top: 10px">
+        <a href="/back" class="btn btn-outline-primary"><i class="angle left icon"></i>Back</a>
+      </p> 
+    </div> 
+  </div>
+       
+<% include ../partials/footer %>

@@ -1,0 +1,217 @@
+<% include partials/header %>
+<div id="follower">
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+</div>  
+<canvas id="scene">
+    
+</canvas>
+<div class="animate_text"><h1>Hi! I am Labeeb!</h1> </div>
+<div class="container" id="intro">
+    <div class="card-transparent" style="margin-bottom: 30px;margin-top: 70px">
+        <div class="card-header" style="background-color: white;font-size: 20px;">
+            <i style="float: left; font-size: 40px" class="user circle icon"></i>
+            <span>
+                <span style="font-size: 20px;text-align: left">Introduction</span>   
+                <p style="margin: 0%; font-size: 16px; color:#A9A9A9;text-align: left">About Me</p>   
+            </span>
+        </div> 
+        <div class="card-block special-card" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
+            I'm currently in my second year of Mechatronics Engineering at McMaster University. I have been coding for almost 2 years now, I really enjoy coding, collaborating with others and learning new approaches from them. In my leisure time, I enjoy programming, playing soccer, listening to technical podcasts and playing video games.
+
+            <p style="margin-top: 10px">You can also view my resume here:</p>
+            <a href="/Images/resume.pdf" target="_blank" class="btn btn-outline-danger"><i class="download icon"></i>View Resume</a>
+        </div> 
+    </div>
+    <div class="card-transparent" id="projects" style="margin-bottom: 30px;margin-top: 70px">
+            <div class="card-header" style="background-color: white;font-size: 20px;">
+                <i style="float: left; font-size: 40px" class="chart line icon"></i>
+                <span>
+                    <span id="projects" style="font-size: 20px;text-align: left">Projects</span>   
+                    <p style="margin: 0%; font-size: 16px; color:#A9A9A9;text-align: left">Some of my projects</p>   
+                </span>
+            </div> 
+            <div class="card-block special-card" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                            <div class="containers">
+                                    <img src="/Images/BloggersInc.PNG" class="image">
+                                    <div class="overlay">
+                                        <div class="text" style="display: inline-block;letter-spacing: 0;color: black">
+                                            BloggersInc
+                                        </div>
+                                        <div class="text">
+                                                <p style="line-height: 2.5rem; margin-top: 20px">
+                                                        <span style="background-color:red; border-radius: 7px;padding: 8px;">HTML5</span>
+                                                        <span style="background-color:  #EEE8AA; border-radius: 7px;padding: 8px">Javascript</span>
+                                                        <span style="background-color: 	green; border-radius: 7px;padding: 8px">Node.JS</span>
+                                                        <span style="background-color: 	#00FA9A; border-radius: 7px;padding: 8px">Semantic UI</span>
+                                                        <span style="background-color: 	green; border-radius: 7px;padding: 8px">MongoDB</span>
+                                                        <span style="background-color: 	blue; border-radius: 7px;padding: 8px">CSS</span>
+                                                        <a href="/LHZ/projectcards/BloggerInc" class="btn btn-danger" style="margin-top: 10px;letter-spacing: 1px">Read more</a>
+                                                </p>
+                                        </div>    
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                            <div class="containers">
+                                    <img src="/Images/CampInsiders.PNG" class="image">
+                                    <div class="overlay">
+                                        <div class="text" style="display: inline-block;letter-spacing: 0;color: black">
+                                            CampInsiders
+                                        </div>
+                                        <div class="text">
+                                                <p style="line-height: 2.5rem; margin-top: 20px">
+                                                        <span style="background-color:red; border-radius: 7px;padding: 8px;">HTML5</span>
+                                                        <span style="background-color:  #EEE8AA; border-radius: 7px;padding: 8px">Javascript</span>
+                                                        <span style="background-color: 	green; border-radius: 7px;padding: 8px">Node.JS</span>
+                                                        <span style="background-color: 	#563d7c; border-radius: 7px;padding: 8px">Bootstrap4</span>
+                                                        <span style="background-color: 	green; border-radius: 7px;padding: 8px">MongoDB</span>
+                                                        <span style="background-color: 	blue; border-radius: 7px;padding: 8px">CSS</span>
+                                                        <a href="/LHZ/projectcards/CampInsiders" class="btn btn-danger" style="margin-top: 10px;letter-spacing: 1px">Read more</a>
+                                                </p>
+                                        </div>    
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px">
+                    <div class="col-md-6 col-sm-12">
+                            <div class="containers">
+                                    <img src="/Images/GameCon.PNG" class="image">
+                                    <div class="overlay">
+                                        <div class="text" style="display: inline-block;letter-spacing: 0;color: black">
+                                            GameCon
+                                        </div>
+                                        <div class="text">
+                                                <p style="line-height: 2.5rem; margin-top: 20px">
+                                                        <span style="background-color:red; border-radius: 7px;padding: 8px;">HTML5</span>
+                                                        <span style="background-color:  #EEE8AA; border-radius: 7px;padding: 8px">Javascript</span>
+                                                        <span style="background-color: 	green; border-radius: 7px;padding: 8px">Node.JS</span>
+                                                        <span style="background-color: 	#563d7c; border-radius: 7px;padding: 8px">Bootstrap4</span>
+                                                        <span style="background-color: 	green; border-radius: 7px;padding: 8px">MongoDB</span>
+                                                        <span style="background-color: 	blue; border-radius: 7px;padding: 8px">CSS</span>
+                                                        <a href="/LHZ/projectcards/GameCon" class="btn btn-danger" style="margin-top: 10px;letter-spacing: 1px">Read more</a>
+                                                </p>
+                                        </div>    
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                            <div class="containers">
+                                    <img src="/Images/Prosthetic Hand.PNG" class="image">
+                                    <div class="overlay">
+                                        <div class="text" style="display: inline-block;letter-spacing: 0;color: black">
+                                            Prosthetic Hand
+                                        </div>
+                                        <div class="text">
+                                                <p style="line-height: 2.5rem; margin-top: 20px">
+                                                        <span style="background-color:#FF7F50; border-radius: 7px;padding: 8px; margin: 0 auto">AutoDesk Inventor</span>
+                                                        <span style="background-color:#FF7F50; border-radius: 7px;padding: 8px; margin: 0 auto;;">AutoCAD</span>
+                                                        <a href="/LHZ/projectcards/ProstheticHand" class="btn btn-danger" style="margin-top: 10px;letter-spacing: 1px">Read more</a>
+                                                </p>
+                                        </div>    
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+            
+    </div>
+    <div class="card-transparent" id="skillset" style="margin-bottom: 30px;margin-top: 70px">
+        <div class="card-header" style="background-color: white;font-size: 20px;">
+            <i style="float: left; font-size: 40px" class="chart bar icon"></i>
+            <span>
+                <span id="projects" style="font-size: 20px;text-align: left">Skills</span>   
+                <p style="margin: 0%; font-size: 16px; color:#A9A9A9;text-align: left">My skills</p>   
+            </span>
+        </div> 
+        <div class="card-block special-card" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
+                <div class="row" style="margin-top: 20px">
+                    <div class="col-4">
+                        <p><img src="/Images/html5.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                        <span style="display: flex; justify-content: center;margin: 0 auto;">HTML5</span>
+                        <div class="container1" style="margin-bottom:30px">
+                          <div class="skills zero">90%</div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                            <p><img src="/Images/bootstrap4.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                            <span style="display: flex; justify-content: center;margin: 0 auto;">Bootstrap4</span>
+                            <div class="container1" style="margin-bottom:30px">
+                              <div class="skills zero">80%</div>
+                            </div>
+                    </div>
+                    <div class="col-4">
+                        <p><img src="/Images/css3.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                        <span style="display: flex; justify-content: center;margin: 0 auto;">CSS3</span>
+                        <div class="container1" style="margin-bottom:30px">
+                          <div class="skills zero">75%</div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <p><img src="/Images/js.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                        <span style="display: flex; justify-content: center;margin: 0 auto;">Javascript</span>
+                        <div class="container1" style="margin-bottom:30px">
+                            <div class="skills zero">75%</div>
+                         </div>
+                    </div> 
+                    <div class="col-4">
+                        <p><img src="/Images/mongodb.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                        <span style="display: flex; justify-content: center;margin: 0 auto;">MongoDB</span>
+                        <div class="container1" style="margin-bottom:30px">
+                          <div class="skills zero">70%</div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <p><img src="/Images/python.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                        <span style="display: flex; justify-content: center;margin: 0 auto;">Python</span>
+                        <div class="container1" style="margin-bottom:30px">
+                          <div class="skills zero">75%</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                        <div class="col-4">
+                                <p><img src="/Images/nodejs.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                                <span style="display: flex; justify-content: center;margin: 0 auto;">NodeJS</span>
+                                <div class="container1" style="margin-bottom:30px">
+                                  <div class="skills zero">80%</div>
+                                </div>
+                            </div>  
+                </div>
+        </div> 
+    </div>
+    <div class="card-transparent" style="margin-bottom: 30px;margin-top: 70px" id="contact">
+            <div class="card-header" style="background-color: white;font-size: 20px;">
+                <i style="float: left; font-size: 40px" class="comments outline icon"></i>
+                <span>
+                    <span style="font-size: 20px;text-align: left">Contact</span>   
+                    <p style="margin: 0%; font-size: 16px; color:#A9A9A9;text-align: left">Want to get in touch?</p>   
+                </span>
+            </div> 
+            <div class="card-block special-card" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
+                    <form action="/email" method="POST">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email"  class="form-control" name="email" >
+                        </div>
+                        <div class="form-group">
+                              <label>Subject</label>
+                              <input type="text"  class="form-control" name="subject" >
+                        </div>
+                        <div class="form-group">
+                              <label>Message</label>
+                              <textarea class="form-control" rows="10" name="message" ></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </form>
+            </div> 
+    </div>
+</div>
+
+<% include partials/footer %>
