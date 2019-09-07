@@ -1,14 +1,8 @@
 {
-  "name": "porfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
-  "author": "Labeeb Hasan Zaker",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
@@ -20,6 +14,14 @@
     "nodemailer": "^6.3.0",
     "nodemailer-mailgun-transport": "^1.4.0",
     "nodemailer-sendgrid-transport": "^0.2.0",
-    "semantic-ui-icon": "^2.3.3"
-  }
+    "semantic-ui-icon": "^2.3.3",
+    "simplebar": "^4.3.0-alpha.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
 }

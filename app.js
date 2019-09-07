@@ -71,6 +71,6 @@ app.post("/email", function(req, res){
       });      
 })
 
-app.listen(3000, function(){
+app.listen(process.env.PORT,process.env.IP, function(){
     console.log("server starts")
 })
