@@ -16,6 +16,7 @@ body{
     padding: 0;
     background-color: black;
     height: 100vh;
+    font-family: 'Titillium Web', sans-serif;
 }
 i.icon.chart.bar:before {
     color: #DC143C;
