@@ -1,0 +1,317 @@
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: black 
+}
+html{
+    scroll-behavior: smooth;
+    cursor: crosshair
+}
+i.icon.user.circle:before {
+    color: #DC143C;
+}
+i.icon.chart.line:before {
+    color: #DC143C;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+}
+i.icon.chart.bar:before {
+    color: #DC143C;
+}
+i.icon.comments.outline:before {
+    content: "\f086";
+    color: red;
+}
+.zero{
+    width: 0
+}
+* {box-sizing:border-box}
+
+.container1 {
+  width: 100%; 
+  background-color: #ddd; 
+  border-radius: 5px;
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 3px; 
+  padding-bottom: 3px; 
+  color: white; 
+  border-radius: 5px
+}
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    margin-top: 65px;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: rgba(255,255,255,.5);
+}
+.containers {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: 240px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255,215,0, 0.82);
+  }
+  
+  .containers:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    letter-spacing: 5px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 2px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+  }
+.html {width: 90%; background-color: #4CAF50;} 
+.bootstrap4{width: 80%; background-color: #4CAF50;}
+.css {width: 75%; background-color: #4CAF50;} 
+.js {width: 75%; background-color: #4CAF50;} 
+.nodejs{width: 80%; background-color:#4CAF50;}
+.mongodb{width: 70%; background-color:#4CAF50;}
+.python{width: 75%; background-color:#4CAF50;}
+.zero{
+    width: 0%
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%
+    }
+}
+.html{
+    animation: html 2s
+}
+@keyframes bootstrap4{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 80%
+    }
+}
+.bootstrap4{
+    animation: bootstrap4 2s
+}
+@keyframes css{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 75%
+    }
+}
+.css{
+    animation: css 2s
+}
+@keyframes js{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 75%
+    }
+}
+.js{
+    animation: js 2s
+}
+@keyframes nodejs{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 80%
+    }
+}
+.nodejs{
+    animation: nodejs 2s
+}
+@keyframes mongodb{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 70%
+    }
+}
+.mongodb{
+    animation: mongodb 2s
+}
+@keyframes python{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 75%
+    }
+}
+.python{
+    animation: python 2s
+}
+#follower{
+    position: absolute;
+    top: 50%;
+    left: 50%
+}
+#circle1{
+    position: absolute;
+      -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
+      animation: pulse 2s infinite;
+      background: white;
+      border-radius: 50%;
+      height: 0em;
+      width: 0em;
+      margin-top: 0em;
+      margin-left: 0em
+}
+  
+  #circle2{
+    position: absolute;
+    -webkit-animation: pulse 4s infinite; /* Chrome, Safari, Opera */
+    animation: pulse 4s infinite;
+    background: rgba(200,0,0,0.8);
+    border-radius: 50%;
+    height: 0em;
+    width: 0em;
+    margin-top: 0em;
+    margin-left: 0em
+  }
+
+@keyframes pulse{
+    0%{ 
+        opacity: 0.2;
+        height: 1em;
+        width: 1em;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
+    }
+   
+    50%{
+        opacity: 0.9;
+        height: 3em;
+        width: 3em;
+        margin-top: -1.5em;
+        margin-left: -1.5em;
+    }
+   
+  100%{
+    opacity: 0.2;
+    height: 1em;
+    width: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em
+  }
+    
+}
+.btn-danger{
+    cursor: crosshair
+}
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid green;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+.btn-outline-danger{
+    cursor: crosshair;
+}
+.btn-primary{
+    cursor: crosshair;
+}
+a {
+    cursor: crosshair;
+}
+.navbar-dark .navbar-toggler {
+    cursor: crosshair;
+}
