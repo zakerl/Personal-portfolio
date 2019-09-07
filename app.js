@@ -45,6 +45,8 @@ app.get("/back",function(req, res){
 })
 app.post("/email", function(req, res){
     var transporter = nodemailer.createTransport({
+        host: "smtp@gmail.com",
+        port: 465,
         service: 'gmail',
         auth: {
           user: 'labeebzaker@gmail.com',
