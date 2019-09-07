@@ -50,7 +50,7 @@ app.post("/email", function(req, res){
         service: 'gmail',
         auth: {
           user: 'labeebzaker@gmail.com',
-          pass: process.env.MYGMAILPASS
+          pass: 'labeeb_1234'
         }
       });
       
