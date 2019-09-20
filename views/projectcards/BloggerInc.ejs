@@ -12,6 +12,25 @@
       .active{
         border: 0
       }
+      hr {
+        overflow: visible; /* For IE */
+        height: 30px;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px 0 0 0;
+        border-radius: 20px;
+        margin: 0
+      }
+    hr:before { /* Not really supposed to work, but does */
+        display: block;
+        content: "";
+        height: 30px;
+        margin-top: -31px;
+        border-style: solid;
+        border-color: black;
+        border-width: 0 0 1px 0;
+        border-radius: 20px;
+    }
     </style>
     <body data-spy="scroll" data-target=".navbar" data-offset="100">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -56,12 +75,13 @@
         </div>
         <div class="cursor"></div>
   
-  <div class="container">
-    <div class="card-header" style="background-color: white;font-size: 20px; margin-top: 4.5rem">
+  <div class="container" style="border: 2px solid black; margin-top: 4.5rem">
+    <div class="card-header" style="background-color: white;font-size: 20px;border:0">
       <span>
-          <span id="projects" style="font-size: 18px; color: black;display: flex; justify-content: center">BloggersInc.</span>   
+          <span id="projects" style="font-size: 30px;display: flex; justify-content: center;color: #04C2C9">BloggersInc.</span>   
       </span>
     </div> 
+    <hr>
     <div class="card-block special-card" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators" style="border: 0">
@@ -97,7 +117,9 @@
           <span style="background-color: 	green; border-radius: 7px;padding: 8px">MongoDB</span>
           <span style="background-color: 	blue; border-radius: 7px;padding: 8px">CSS</span>
       </p>
-      This is one of my favourite websites I have created so far. MongoDB was used to store user data and create links between different sets of data. Passport JS library was used to create a safe login form and authenticate users safely. The website also involes restful routing, allows user to create or edit their blogs, and make or edit their comments. A functional search bar was made using mongoose and express libraries. MongoDB allowed user profiles to be created and Semantic UI was used for styling the profile cards,which can be viewed,users can also view other authors' profiles, and see how many blogs that particular author created.
+      <span style="color: black">
+        This is one of my favourite websites I have created so far. MongoDB was used to store user data and create links between different sets of data. Passport JS library was used to create a safe login form and authenticate users safely. The website also involes restful routing, allows user to create or edit their blogs, and make or edit their comments. A functional search bar was made using mongoose and express libraries. MongoDB allowed user profiles to be created and Semantic UI was used for styling the profile cards,which can be viewed,users can also view other authors' profiles, and see how many blogs that particular author created.
+      </span>
       <p style="margin-bottom: 0;margin-top: 10px">
         <a href="/back" class="btn btn-outline-primary"><i class="angle left icon"></i>Back</a>
       </p> 

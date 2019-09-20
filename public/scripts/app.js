@@ -27,6 +27,92 @@ var animateHTML = function() {
       init: init
     };
   };
+  var animateHTML1 = function() {
+    var elems;
+    var windowHeight;
+    function init() {
+      elems = document.querySelectorAll('.card-header-selector');
+      windowHeight = window.innerHeight;
+      addEventHandlers();
+      checkPosition();
+    }
+    function addEventHandlers() {
+      window.addEventListener('scroll', checkPosition);
+      window.addEventListener('resize', init);
+    }
+    function checkPosition() {
+      for (var i = 0; i < elems.length; i++) {
+        var positionFromTop = elems[i].getBoundingClientRect().top;
+        if (positionFromTop - windowHeight <= 0) {
+          elems[i].className = elems[i].className.replace(
+            'card-header-none',
+            "card-header"
+          );
+        }
+      }
+    }
+    return {
+      init: init
+    };
+  };
+
+  var animateHTML2 = function() {
+    var elems;
+    var windowHeight;
+    function init() {
+      elems = document.querySelectorAll('.card-block-selector');
+      windowHeight = window.innerHeight;
+      addEventHandlers();
+      checkPosition();
+    }
+    function addEventHandlers() {
+      window.addEventListener('scroll', checkPosition);
+      window.addEventListener('resize', init);
+    }
+    function checkPosition() {
+      for (var i = 0; i < elems.length; i++) {
+        var positionFromTop = elems[i].getBoundingClientRect().top;
+        if (positionFromTop - windowHeight <= 0) {
+          elems[i].className = elems[i].className.replace(
+            'card-block-none',
+            "card-block"
+          );
+        }
+      }
+    }
+    return {
+      init: init
+    };
+  };
+  var animateHTML3 = function() {
+    var elems;
+    var windowHeight;
+    function init() {
+      elems = document.querySelectorAll('.hr-selector');
+      windowHeight = window.innerHeight;
+      addEventHandlers();
+      checkPosition();
+    }
+    function addEventHandlers() {
+      window.addEventListener('scroll', checkPosition);
+      window.addEventListener('resize', init);
+    }
+    function checkPosition() {
+      for (var i = 0; i < elems.length; i++) {
+        var positionFromTop = elems[i].getBoundingClientRect().top;
+        if (positionFromTop - windowHeight <= 0) {
+          elems[i].className = elems[i].className.replace(
+            '-none',
+            "hr-animate"
+          );
+        }
+      }
+    }
+    return {
+      init: init
+    };
+  };
+  
   const cursor = document.querySelector('.cursor');
 
   document.addEventListener('mousemove', e => {
@@ -41,5 +127,8 @@ var animateHTML = function() {
       }, 500)
   })
   animateHTML().init();
+  animateHTML1().init();
+  animateHTML2().init();
+  animateHTML3().init();
 
  

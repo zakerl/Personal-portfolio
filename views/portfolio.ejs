@@ -3,21 +3,80 @@
     <div id="circle1"></div>
     <div id="circle2"></div>
 </div>  
-<canvas id="scene">
+<style>
+    .card-header-none{
+        margin-left: 50%;
+        opacity: 0
+    }
+    .card-header{
+        opacity: 1;
+        margin-left: 0;
+        animation: slide-in 0.5s ease-in
+    }
+    @keyframes slide-in{
+    0%{
+        margin-left: 50%;
+        opacity: 0
+    }
+    100%{
+        margin-left: 0;
+        opacity: 1;
+    }
+    }
+    .-none{
+        margin-left: 50%;
+        opacity: 0
+    }
+    .card-block-none{
+        margin-left: 50%;
+        opacity: 0
+    }
+    .hr-animate{
+        width: 100%;
+        animation: loading-bar 0.5s ease-in
+    }
+    @keyframes loading-bar {
+        0%{
+            width: 0%
+        };
+        100%{
+            width: 100%
+        }
+    }
+    .card-block{
+        margin: 0px;
+        animation: slide-up 1s ease-in
+    }
+    @keyframes slide-up {
+        0%{
+            opacity: 0;
+            margin-top: 250px
+        }
+        100%{
+            opacity: 1;
+            margin-top: 0
+        }
+    }
+    .skills-image:hover{
+        transform: scale(1.3)
+    }
+</style>
+<canvas id="scene" style="background-color: black">
     
 </canvas>
 <div class="animate_text" style="margin-top: 30px"><h1>Hi! I am Labeeb!</h1> </div>
 <div class="container">
     <div id="intro" style="padding-top: 50px">
             <div  class="card-transparent">
-                    <div class="card-header" style="background-color: white;font-size: 20px;">
-                        <i style="float: left; font-size: 40px" class="user circle icon"></i>
+                    <div class="card-header-selector card-header-none" style="background-color: white;font-size: 20px;border-bottom: 0">
+                        <i style="float: left; font-size: 55px" class="user circle icon"></i>
                         <span>
-                            <span style="font-size: 20px;text-align: left">Introduction</span>   
-                            <p style="margin: 0%; font-size: 16px; color:#A9A9A9;text-align: left">About Me</p>   
+                            <span style="font-size: 30px;text-align: left; color: #04C2C9">Introduction</span>   
+                            <p style="margin: 0%; font-size: 22px; color:#A9A9A9;text-align: left">About Me</p>   
                         </span>
                     </div> 
-                    <div class="card-block special-card" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
+                    <hr class="hr-selector -none" style="border: 1px solid green; margin: 5px">
+                    <div class="card-block-selector card-block-none" style="color: black; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 20px">
                         I'm currently in my second year of Mechatronics Engineering at McMaster University. I have been coding for almost 2 years now, I really enjoy coding, collaborating with others and learning new approaches from them. In my leisure time, I enjoy programming, playing soccer, listening to technical podcasts and playing video games.
             
                         <p style="margin-top: 10px">You can also view my resume here:</p>
@@ -27,14 +86,15 @@
     </div>
     <div id="projects" style="padding-top: 50px">
             <div class="card-transparent">
-                    <div class="card-header" style="background-color: white;font-size: 20px;">
-                        <i style="float: left; font-size: 40px" class="chart line icon"></i>
+                    <div class="card-header-selector card-header-none" style="background-color: white;font-size: 20px;border: 0">
+                        <i style="float: left; font-size: 55px" class="chart line icon"></i>
                         <span>
-                            <span style="font-size: 20px;text-align: left">Projects</span>   
-                            <p style="margin: 0%; font-size: 16px; color:#A9A9A9;text-align: left">Some of my projects</p>   
+                            <span style="font-size: 30px;text-align: left; color: #04C2C9">Projects</span>   
+                            <p style="margin: 0%; font-size: 22px; color:#A9A9A9;text-align: left">Some of my projects</p>   
                         </span>
                     </div> 
-                    <div class="card-block special-card" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
+                    <hr class="hr-selector -none" style="border: 1px solid green; margin: 5px">
+                    <div class="card-block-selector card-block-none" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
                                     <div class="containers">
@@ -125,32 +185,33 @@
     </div>
     <div id="skillset" style="padding-top: 50px">
         <div class="card-transparent">
-            <div class="card-header" style="background-color: white;font-size: 20px;">
-                <i style="float: left; font-size: 40px" class="chart bar icon"></i>
+            <div class="card-header-selector card-header-none" style="background-color: white;font-size: 20px;border-bottom: 0;">
+                <i style="float: left; font-size: 55px" class="chart bar icon"></i>
                 <span>
-                    <span style="font-size: 20px;text-align: left">Skills</span>   
-                    <p style="margin: 0%; font-size: 16px; color:#A9A9A9;text-align: left">My skills</p>   
+                    <span style="font-size: 30px;text-align: left; color: #04C2C9">Skills</span>   
+                    <p style="margin: 0%; font-size: 22px; color:#A9A9A9;text-align: left">My skills</p>   
                 </span>
             </div> 
-            <div class="card-block special-card" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
+            <hr class="hr-selector -none" style="border: 1px solid green; margin: 5px">
+            <div class="card-block-selector card-block-none" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
                     <div class="row" style="margin-top: 20px">
                         <div class="col-4">
-                            <p><img src="/Images/html5.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
-                            <span style="display: flex; justify-content: center;margin: 0 auto; margin-bottom: 20px; font-size: 20px; font-weight: 600">HTML5</span>
+                            <p><img class="skills-image" src="/Images/html5.png" style="width: 100px; height: 100px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                            <span style="display: flex; justify-content: center;margin: 0 auto; margin-bottom: 20px; font-size: 20px; font-weight: 600; color: black">HTML5</span>
                             <div class="container1" style="margin-bottom:30px">
                             <div class="skills zero">90%</div>
                             </div>
                         </div>
                         <div class="col-4">
-                                <p><img src="/Images/bootstrap4.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
-                                <span style="display: flex; justify-content: center;margin: 0 auto;margin-bottom: 20px; font-size: 20px; font-weight: 600">Bootstrap4</span>
+                                <p><img class="skills-image" src="/Images/bootstrap4.png" style="width: 100px; height: 100px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                                <span style="display: flex; justify-content: center;margin: 0 auto;margin-bottom: 20px; font-size: 20px; font-weight: 600;color: black">Bootstrap4</span>
                                 <div class="container1" style="margin-bottom:30px">
                                 <div class="skills zero">80%</div>
                                 </div>
                         </div>
                         <div class="col-4">
-                            <p><img src="/Images/css3.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
-                            <span style="display: flex; justify-content: center;margin: 0 auto;margin-bottom: 20px; font-size: 20px; font-weight: 600">CSS3</span>
+                            <p><img class="skills-image" src="/Images/css3.png" style="width: 100px; height: 100px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                            <span style="display: flex; justify-content: center;margin: 0 auto;margin-bottom: 20px; font-size: 20px; font-weight: 600;color: black">CSS3</span>
                             <div class="container1" style="margin-bottom:30px">
                             <div class="skills zero">75%</div>
                             </div>
@@ -158,22 +219,22 @@
                     </div>
                     <div class="row">
                         <div class="col-4">
-                            <p><img src="/Images/js.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
-                            <span style="display: flex; justify-content: center;margin: 0 auto;margin-bottom: 20px; font-size: 20px; font-weight: 600">Javascript</span>
+                            <p><img class="skills-image" src="/Images/js.png" style="width: 100px; height: 100px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                            <span style="display: flex; justify-content: center;margin: 0 auto;margin-bottom: 20px; font-size: 20px; font-weight: 600;color: black">Javascript</span>
                             <div class="container1" style="margin-bottom:30px">
                                 <div class="skills zero">75%</div>
                             </div>
                         </div> 
                         <div class="col-4">
-                            <p><img src="/Images/mongodb.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
-                            <span style="display: flex; justify-content: center;margin: 0 auto;margin-bottom: 20px; font-size: 20px; font-weight: 600">MongoDB</span>
+                            <p><img class="skills-image" src="/Images/mongodb.png" style="width: 100px; height: 100px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                            <span style="display: flex; justify-content: center;margin: 0 auto;margin-bottom: 20px; font-size: 20px; font-weight: 600;color: black">MongoDB</span>
                             <div class="container1" style="margin-bottom:30px">
                             <div class="skills zero">70%</div>
                             </div>
                         </div>
                         <div class="col-4">
-                            <p><img src="/Images/python.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
-                            <span style="display: flex; justify-content: center;margin: 0 auto;margin-bottom: 20px; font-size: 20px; font-weight: 600">Python</span>
+                            <p><img class="skills-image" src="/Images/python.png" style="width: 100px; height: 100px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                            <span style="display: flex; justify-content: center;margin: 0 auto;margin-bottom: 20px; font-size: 20px; font-weight: 600;color: black">Python</span>
                             <div class="container1" style="margin-bottom:30px">
                             <div class="skills zero">75%</div>
                             </div>
@@ -182,8 +243,8 @@
                     </div>
                     <div class="row">
                             <div class="col-4">
-                                    <p><img src="/Images/nodejs.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
-                                    <span style="display: flex; justify-content: center;margin: 0 auto;margin-bottom: 20px; font-size: 20px; font-weight: 600">NodeJS</span>
+                                    <p><img class="skills-image" src="/Images/nodejs.png" style="width: 150px; height: 150px; display: flex; justify-content: center;margin: 0 auto;"></p>
+                                    <span style="display: flex; justify-content: center;margin: 0 auto;margin-bottom: 20px; font-size: 20px; font-weight: 600;color: black">NodeJS</span>
                                     <div class="container1" style="margin-bottom:30px">
                                     <div class="skills zero">80%</div>
                                     </div>
@@ -194,25 +255,26 @@
     </div>
     <div id="contact" style="padding-top: 50px">
             <div class="card-transparent">
-                    <div class="card-header" style="background-color: white;font-size: 20px;">
-                        <i style="float: left; font-size: 40px" class="comments outline icon"></i>
+                    <div class="card-header-selector card-header-none" style="background-color: white;font-size: 20px;border-bottom: 0">
+                        <i style="float: left; font-size: 55px" class="comments outline icon"></i>
                         <span>
-                            <span style="font-size: 20px;text-align: left">Contact</span>   
-                            <p style="margin: 0%; font-size: 16px; color:#A9A9A9;text-align: left">Want to get in touch?</p>   
+                            <span style="font-size: 30px;text-align: left; color: #04C2C9">Contact</span>   
+                            <p style="margin: 0%; font-size: 22px; color:#A9A9A9;text-align: left">Want to get in touch?</p>   
                         </span>
                     </div> 
-                    <div class="card-block special-card" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
+                    <hr class="hr-selector -none" style="border: 1px solid green; margin: 5px">
+                    <div class="card-block-selector card-block-none" style="color: white; border: 2px solid white; border-top: 0;padding: 12px 20px; font-size: 15px">
                             <form action="/email" method="POST">
                                 <div class="form-group">
-                                    <label>Email</label>
+                                    <label style="color: black">Email</label>
                                     <input type="email"  class="form-control" name="email" >
                                 </div>
                                 <div class="form-group">
-                                      <label>Subject</label>
+                                      <label style="color: black">Subject</label>
                                       <input type="text"  class="form-control" name="subject" >
                                 </div>
                                 <div class="form-group">
-                                      <label>Message</label>
+                                      <label style="color: black">Message</label>
                                       <textarea class="form-control" rows="10" name="message" ></textarea>
                                 </div>
                                 <input type="submit" value="Submit" class="btn btn-primary">
