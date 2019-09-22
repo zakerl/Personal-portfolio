@@ -36,9 +36,7 @@ app.get("/LHZ/projectcards/GameCon", function(req, res){
 app.get("/LHZ/projectcards/ProstheticHand", function(req, res){
   res.render("./projectcards/ProsthethicHand")
 })
-app.get("/back",function(req, res){
-  res.redirect("/LHZ/portfolio#projects")
-})
+
 app.post("/email", function(req, res){
     var transporter = nodemailer.createTransport({
         host: "smtp@gmail.com",
