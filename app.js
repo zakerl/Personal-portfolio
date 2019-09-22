@@ -21,12 +21,8 @@ app.use(function(req, res, next){
     next()
 })
 
-
 app.get("/", function(req, res){
-    res.redirect("/LHZ/portfolio")
-})
-app.get("/LHZ/portfolio", function(req, res){
-    res.render("portfolio")
+  res.render("portfolio")
 })
 app.get("/LHZ/projectcards/BloggerInc", function(req, res){
     res.render("./projectcards/BloggerInc")
