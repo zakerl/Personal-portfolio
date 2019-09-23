@@ -15,6 +15,7 @@
     "nodemailer-mailgun-transport": "^1.4.0",
     "nodemailer-sendgrid-transport": "^0.2.0",
     "semantic-ui-icon": "^2.3.3",
+    "serve-favicon": "^2.5.0",
     "simplebar": "^4.3.0-alpha.0"
   },
   "devDependencies": {},
