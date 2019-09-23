@@ -24,16 +24,16 @@ app.use(function(req, res, next){
 app.get("/", function(req, res){
   res.render("portfolio")
 })
-app.get("/LHZ/projectcards/BloggerInc", function(req, res){
+app.get("/projectcards/BloggerInc", function(req, res){
     res.render("./projectcards/BloggerInc")
 })
-app.get("/LHZ/projectcards/CampInsiders", function(req, res){
+app.get("/projectcards/CampInsiders", function(req, res){
   res.render("./projectcards/CampInsiders")
 })
-app.get("/LHZ/projectcards/GameCon", function(req, res){
+app.get("/projectcards/GameCon", function(req, res){
   res.render("./projectcards/GameCon")
 })
-app.get("/LHZ/projectcards/ProstheticHand", function(req, res){
+app.get("/projectcards/ProstheticHand", function(req, res){
   res.render("./projectcards/ProsthethicHand")
 })
 
@@ -62,7 +62,7 @@ app.post("/email", function(req, res){
         } else {
           console.log('Email sent: ' + info.response);
           req.flash("success", "Successfully sent email!")
-          res.redirect("/LHZ/portfolio")
+          res.redirect("/")
         }
       });      
 })
