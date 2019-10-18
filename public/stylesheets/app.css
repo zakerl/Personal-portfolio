@@ -677,7 +677,7 @@ i.icon.comments.outline:before {
   }
   
   .text {
-    top: 120px;
+    top: 160px;
     left: 0;
     width: 100%;
     height: 80%;
@@ -929,7 +929,7 @@ a {
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #A9A9A9;
+    background-color: #696969;
     margin: 5% auto; /* 15% from the top and centered */
     padding: 10px 0;
     padding-top: 0;
