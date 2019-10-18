@@ -43,14 +43,14 @@ app.post("/email", function(req, res){
         port: 465,
         service: 'gmail',
         auth: {
-          user: 'zakerl@mcmaster.ca',
+          user: 'labeebzaker@gmail.com',
           pass: process.env.MYGMAILPASS
         }
       });
       
       var mailOptions = {
-        from: "zakerl@mcmaster.ca",
-        to: 'zakerl@mcmaster.ca',
+        from: "labeebzaker@gmail.com",
+        to: 'labeebzaker@gmail.com',
         // email: req.body.email,
         subject: req.body.subject,
         text: `${req.body.email} has sent the following message: ${req.body.message}`
