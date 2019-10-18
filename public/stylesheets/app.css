@@ -827,7 +827,7 @@ i.icon.comments.outline:before {
     position: absolute;
     -webkit-animation: pulse 4s infinite; /* Chrome, Safari, Opera */
     animation: pulse 4s infinite;
-    background: rgba(200,0,0,0.8);
+    background: rgba(4,194,201,0.8);
     border-radius: 50%;
     height: 0em;
     width: 0em;
