@@ -929,7 +929,8 @@ a {
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #696969;
+    background-color: black;
+    border: 1px solid black;
     margin: 5% auto; /* 15% from the top and centered */
     padding: 10px 0;
     padding-top: 0;
