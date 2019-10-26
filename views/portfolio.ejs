@@ -1,72 +1,4 @@
-
-<html>
-    <head>
-        <title>Labeeb Hasan Zaker</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="/stylesheets/app.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    </head>
-    <div class="container">
-      
-    </div>
-    <div id="follower" style="padding: 0px">
-      <div id="circle1"></div>
-      <div id="circle2"></div>
-    </div>
-    <div id="canvas">
-      <section class="wrapper">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-          <div id="title">
-              <span></span>
-              <br>
-              <br>
-              <span style="margin-top: 30px;font-size: 24px;">Labeeb Hasan Zaker - Mechatronics Engineer || Full Stack Developer</span>
-              <br>
-          </div>
-      </section>
-    </div>
-    <body data-spy="scroll" data-target=".navbar" data-offset="100">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
-          <div class="container">
-              <a class="navbar-brand" href="#">Labeeb</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#intro" id="intro-tab">Introduction</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#projects" class="nav-link" id="project-tab">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#skillset" class="nav-link" id="skills-tab">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#contact" class="nav-link" id="contact-tab">Contact Me</a>
-                  </li>
-                </ul>
-                <ul class="nav justify-content-end">
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/in/labeeb-hasan-zaker/" target="_blank"><img src="/Images/LinkedIn_logo.png" style="width: 24px; height: 25px"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/zakerl" target="_blank"><img src="/Images/github_logo.png" style="width: 24px; height: 25px"></a>
-                  </li>
-                </ul>
-              </div>
-          </div>
-        </nav>
-        
-        <div class="cursor"></div>
-  
-  
-    
+<% include partials/header %>
   
 <style>
     .card-header-none{
@@ -202,7 +134,7 @@
                             </div>
         
                         </div>
-                        <div class="row">
+                        <div class="row" style="margin-top: 20px">
         
                             <div class="col-lg-12">
                                     <div class="containers">
@@ -296,7 +228,7 @@
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">MongoDB</span>
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">CSS3</span>
                 </p>
-                <span>
+                <span style="color: black">
                     This is one of my favourite websites I have created so far. MongoDB was used to store user data and create links between different sets of data. Passport JS library was used to create a safe login form and authenticate users safely. The website also involes restful routing, allows user to create or edit their blogs, and make or edit their comments. A functional search bar was made using mongoose and express libraries. MongoDB allowed user profiles to be created and Semantic UI was used for styling the profile cards,which can be viewed,users can also view other authors' profiles, and see how many blogs that particular author created.
                 </span>
                 <p style="margin-bottom: 0;margin-top: 10px">
@@ -351,7 +283,7 @@
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">MongoDB</span>
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">CSS3</span>
                 </p>
-                <span>
+                <span style="color: black">
                     This is the first full-stack website I have made from scratch. This site allows users to edit and create campgrounds, give reviews, and also edit and create comments on the campgrounds,all this data are stored in non relational database created by MongoDB. Express library was used to involve the routes needed to make html requests. I implemented PassportJS for user authentication and the website also involves restful routing. The front end is done, the backend needs some final touches. A responsive search engine was implemented to search for any available campgrounds. I also had to include a google maps API just so that when user could add a location that would be displayed on google maps.     
                 </span>
                 <p style="margin-bottom: 0;margin-top: 10px">
@@ -406,7 +338,7 @@
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">MongoDB</span>
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">CSS3</span>
                 </p>
-                <span>
+                <span style="color: black">
                     This is a game review website that I have created. It allows users to add new games, add reviews and edit them, and also allow the users to make or edit their comments on the games. The website involves passportJS for user authentication and MongoDB was used to create and store non relational databases. The website requires little backend work, I also implemented Express libary which allowed me to easily send HTML requests to the web server.
                 </span>
                 <p style="margin-bottom: 0;margin-top: 10px">
@@ -463,7 +395,7 @@
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">AutoDesk Inventor</span>
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">AutoCAD</span>
                 </p>
-                <span>
+                <span style="color: black">
                     The aim of this project was to make a fully functional gear train, that will move the thumb and the index finger at a certain output speed with a certain input speed. I worked in group of 3 to get the job done. I did the preliminary sketches, and almost all of the drawings, we made in this project. I used AutoDesk Inventor to CAD some of the spur gears, and made some gear calculations too. We were successful in getting the design to work. This project demonstrates my ability to work with others, coming up with really good ideas, and also my abilities of CAD.
                 </span>
                 <p style="margin-bottom: 0;margin-top: 10px">
@@ -568,9 +500,4 @@
     </div>
 </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="/scripts/app.js"></script>
-    </body>
-</html>
+<% include partials/footer %>
