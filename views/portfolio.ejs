@@ -228,7 +228,7 @@
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">MongoDB</span>
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">CSS3</span>
                 </p>
-                <span style="color: black">
+                <span style="color: white">
                     This is one of my favourite websites I have created so far. MongoDB was used to store user data and create links between different sets of data. Passport JS library was used to create a safe login form and authenticate users safely. The website also involes restful routing, allows user to create or edit their blogs, and make or edit their comments. A functional search bar was made using mongoose and express libraries. MongoDB allowed user profiles to be created and Semantic UI was used for styling the profile cards,which can be viewed,users can also view other authors' profiles, and see how many blogs that particular author created.
                 </span>
                 <p style="margin-bottom: 0;margin-top: 10px">
@@ -283,7 +283,7 @@
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">MongoDB</span>
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">CSS3</span>
                 </p>
-                <span style="color: black">
+                <span style="color: white">
                     This is the first full-stack website I have made from scratch. This site allows users to edit and create campgrounds, give reviews, and also edit and create comments on the campgrounds,all this data are stored in non relational database created by MongoDB. Express library was used to involve the routes needed to make html requests. I implemented PassportJS for user authentication and the website also involves restful routing. The front end is done, the backend needs some final touches. A responsive search engine was implemented to search for any available campgrounds. I also had to include a google maps API just so that when user could add a location that would be displayed on google maps.     
                 </span>
                 <p style="margin-bottom: 0;margin-top: 10px">
@@ -338,7 +338,7 @@
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">MongoDB</span>
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">CSS3</span>
                 </p>
-                <span style="color: black">
+                <span style="color: white">
                     This is a game review website that I have created. It allows users to add new games, add reviews and edit them, and also allow the users to make or edit their comments on the games. The website involves passportJS for user authentication and MongoDB was used to create and store non relational databases. The website requires little backend work, I also implemented Express libary which allowed me to easily send HTML requests to the web server.
                 </span>
                 <p style="margin-bottom: 0;margin-top: 10px">
@@ -395,7 +395,7 @@
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">AutoDesk Inventor</span>
                     <span style="background-color:white; border-radius: 7px;padding: 8px;color: black;">AutoCAD</span>
                 </p>
-                <span style="color: black">
+                <span style="color: white">
                     The aim of this project was to make a fully functional gear train, that will move the thumb and the index finger at a certain output speed with a certain input speed. I worked in group of 3 to get the job done. I did the preliminary sketches, and almost all of the drawings, we made in this project. I used AutoDesk Inventor to CAD some of the spur gears, and made some gear calculations too. We were successful in getting the design to work. This project demonstrates my ability to work with others, coming up with really good ideas, and also my abilities of CAD.
                 </span>
                 <p style="margin-bottom: 0;margin-top: 10px">
@@ -483,15 +483,15 @@
                             <form action="/email" method="POST">
                                 <div class="form-group">
                                     <label style="color: white">Email</label>
-                                    <input type="email"  class="form-control" name="email" >
+                                    <input type="email"  class="form-control" name="email" required >
                                 </div>
                                 <div class="form-group">
                                       <label style="color: white">Subject</label>
-                                      <input type="text"  class="form-control" name="subject" >
+                                      <input type="text"  class="form-control" name="subject"  required>
                                 </div>
                                 <div class="form-group">
                                       <label style="color: white">Message</label>
-                                      <textarea class="form-control" rows="10" name="message" ></textarea>
+                                      <textarea class="form-control" rows="10" name="message" required ></textarea>
                                 </div>
                                 <input type="submit" value="Submit" class="btn btn-info">
                             </form>
