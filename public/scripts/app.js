@@ -204,16 +204,6 @@ window.onclick = function(event) {
     modal3.style.display = "none";
   }
 }
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("content").style.display = "block";
-}
   animateHTML().init();
   animateHTML1().init();
   animateHTML2().init();
