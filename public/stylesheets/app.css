@@ -598,7 +598,50 @@ html {
         transform: translateY(-2000px);
     }
 }
-
+#BloggersIncimage{
+    background-image: url("/Images/BloggersInc.png");
+}
+#CampInsidersimage{
+    background-image: url("/Images/CampInsiders.PNG");
+}
+#GameConimage{
+    background-image: url("/Images/GameCon.PNG");
+}
+#Handimage{
+    background-image: url("/Images/Prosthetic Hand.PNG");
+}
+.projectcard{
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+  }
+  
+  .projecttext{
+    background: rgba(0, 0, 0, .6);
+    margin: 0;
+    margin-top: 38%;
+    transition: 1s;
+    letter-spacing: 0;
+    color: #04C2C9;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+  }
+  .game{
+    margin-top: 39%
+  }
+  .projectbody {
+    background: rgba(0, 0, 0, .6);
+    margin-top: 0;
+    height:100%
+  }
+  
+  .hover{
+    margin-top: 0;
+  }
 
 i.icon.user.circle:before {
     color: #DC143C;
@@ -649,56 +692,6 @@ i.icon.comments.outline:before {
     padding: .5rem 1rem;
     color: rgba(255,255,255,.5);
 }
-.containers {
-    position: relative;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: 240px;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, .6);
-  }
-  
-  .containers:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
-    top: 160px;
-    left: 0;
-    width: 100%;
-    height: 80%;
-    font-family: sans-serif;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    letter-spacing: 5px;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .active{
-      border-bottom: 2px solid blue
-  }
   ::-webkit-scrollbar {
     width: 13px;
   }

@@ -204,6 +204,20 @@ window.onclick = function(event) {
     modal3.style.display = "none";
   }
 }
+var div = document.querySelectorAll(".projectcard");
+var title = document.querySelectorAll(".projecttext");
+for(let i = 0; i < div.length; i++)
+{
+  div[i].addEventListener("mouseover", function(){
+    title[i].classList.add("hover");  
+  }); 
+ div[i].addEventListener("mouseout", function(){
+    title[i].classList.remove("hover");  
+  }); 
+}
+
+
+
   animateHTML().init();
   animateHTML1().init();
   animateHTML2().init();
