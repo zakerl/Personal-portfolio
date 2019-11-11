@@ -6,32 +6,35 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
-    <div class="container">
-      <% if(success && success.length > 0){ %>
-          <div class="alert alert-success" role="alert">
-              <%= success %>
+    
+    <body onload="myFunction()" style="margin: 0;" data-spy="scroll" data-target=".navbar" data-offset="100">
+        <div id="loader"></div>
+        <div style="display:none;" id="content">
+        <div class="container">
+            <% if(success && success.length > 0){ %>
+                <div class="alert alert-success" role="alert">
+                    <%= success %>
+                </div>
+            <% } %>
           </div>
-      <% } %>
-    </div>
-    <div id="follower" style="padding: 0px">
-      <div id="circle1"></div>
-      <div id="circle2"></div>
-    </div>
-    <div id="canvas">
-      <section class="wrapper">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-          <div id="title">
-              <span></span>
-              <br>
-              <br>
-              <span style="margin-top: 30px;font-size: 24px;">Labeeb Hasan Zaker - Mechatronics Engineer || Full Stack Developer</span>
-              <br>
+          <div id="follower" style="padding: 0px">
+            <div id="circle1"></div>
+            <div id="circle2"></div>
           </div>
-      </section>
-    </div>
-    <body data-spy="scroll" data-target=".navbar" data-offset="100">
+          <div id="canvas">
+            <section class="wrapper">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+                <div id="title">
+                    <span></span>
+                    <br>
+                    <br>
+                    <span style="margin-top: 30px;font-size: 24px;">Labeeb Hasan Zaker - Mechatronics Engineer || Full Stack Developer</span>
+                    <br>
+                </div>
+            </section>
+          </div>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
           <div class="container">
               <a class="navbar-brand" href="#">Labeeb</a>
