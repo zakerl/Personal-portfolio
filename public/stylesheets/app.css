@@ -1022,3 +1022,55 @@ a {
     text-decoration: none;
     cursor: pointer;
   }
+  .card-header-none{
+    opacity: 0
+}
+.card-header{
+    opacity: 1;
+    margin-left: 0;
+    -webkit-animation:fade-in 1.5s ease-in; /* Safari & Chrome */
+    -moz-animation:fade-in 1.5s ease-in; /* Firefox */
+    -ms-animation:fade-in 1.5s ease-in; /* Internet Explorer */
+    -o-animation:fade-in 1.5s ease-in; /* Opera */
+    animation: fade-in 1.5s ease-in
+}
+@keyframes fade-in{
+0%{
+    opacity: 0
+}
+100%{
+    opacity: 1;
+}
+}
+.card-block-none{
+    opacity: 0
+}
+.card-block{
+    margin: 0px;
+    -webkit-animation:fade-in 1.5s ease-in; /* Safari & Chrome */
+    -moz-animation:fade-in 1.5s ease-in; /* Firefox */
+    -ms-animation:fade-in 1.5s ease-in; /* Internet Explorer */
+    -o-animation:fade-in 1.5s ease-in;
+    animation: fade-in 1.5s ease-in
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skills-image{
+    transition: all 300ms;
+}
+.skills-image:hover{
+    transform: scale(1.3);
+}
+body{
+    background: black;
+}
+.btn-outline-danger:hover {
+    color: white;
+    background-color:white;
+}

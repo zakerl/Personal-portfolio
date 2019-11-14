@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
     document.body.removeChild(load_screen)
     var navbar = document.querySelector("nav")
     navbar.classList.add("fixed-top")
-  },3000)
+  },1500)
 })
 window.onscroll = function() {myFunction()};
 
