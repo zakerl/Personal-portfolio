@@ -1,3 +1,14 @@
+// $(window).on("load",function(){
+//   $(".loader-wrapper").fadeOut("slow");
+// })
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
 var className = ["html","bootstrap4", "css","js","mongodb","python","nodejs"]
 var animateHTML = function() {
     var elems;

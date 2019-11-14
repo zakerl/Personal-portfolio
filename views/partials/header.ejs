@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
+    <!-- <div class="loader-wrapper">
+      <div id="loader"></div>
+    </div> -->
     <div class="container">
       <% if(success && success.length > 0){ %>
           <div class="alert alert-success" role="alert">
@@ -65,8 +68,14 @@
               </div>
           </div>
         </nav>
+      <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div> 
+      </div>
         
         <div class="cursor"></div>
+        
   
   
     

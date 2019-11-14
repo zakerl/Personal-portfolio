@@ -1,3 +1,30 @@
+/* #loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} */
+
 .navbar-dark .navbar-nav .nav-link:hover {
     color: white
 }
@@ -598,6 +625,28 @@ html {
         transform: translateY(-2000px);
     }
 }
+.header {
+    position: fixed;
+    top: 57px;
+    z-index: 1;
+    width: 100%;
+  }
+.progress-container {
+    width: 100%;
+    height: 8px;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #04C2C9;
+    width: 0%;
+  }
+  
+  .content {
+    padding: 100px 0;
+    margin: 50px auto 0 auto;
+    width: 80%;
+  }
 #BloggersIncimage{
     background-image: url("/Images/BloggersInc.PNG");
 }
@@ -608,7 +657,7 @@ html {
     background-image: url("/Images/GameCon.PNG");
 }
 #Handimage{
-    background-image: url("/Images/Prosthetic Hand.PNG");
+    background-image: url("/Images/prosthetic.PNG");
 }
 .projectcard{
     height: 300px;
@@ -620,7 +669,7 @@ html {
   }
   
   .projecttext{
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .8);
     margin: 0;
     margin-top: 38%;
     transition: 1s;
@@ -634,7 +683,7 @@ html {
     margin-top: 39%
   }
   .projectbody {
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .8);
     margin-top: 0;
     height:100%
   }
@@ -673,7 +722,9 @@ i.icon.comments.outline:before {
   background-color: #ddd; 
   border-radius: 5px;
 }
-
+.active{
+    border-bottom: 2px solid blue
+}
 .skills {
   text-align: right; 
   padding-top: 3px; 
