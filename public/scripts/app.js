@@ -1,6 +1,11 @@
-// $(window).on("load",function(){
-//   $(".loader-wrapper").fadeOut("slow");
-// })
+window.addEventListener("load", function(){
+  setTimeout(function(){
+    var load_screen = document.getElementById("loading-screen")
+    document.body.removeChild(load_screen)
+    var navbar = document.querySelector("nav")
+    navbar.classList.add("fixed-top")
+  },3000)
+})
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
