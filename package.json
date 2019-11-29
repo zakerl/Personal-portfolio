@@ -10,6 +10,7 @@
     "ejs": "^2.6.2",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
+    "helmet": "^3.21.2",
     "imap": "^0.8.19",
     "nodemailer": "^6.3.0",
     "nodemailer-mailgun-transport": "^1.4.0",

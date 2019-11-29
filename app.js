@@ -1,11 +1,13 @@
 var express = require("express")
     bodyParser = require("body-parser")
     nodemailer = require("nodemailer")
+    helmet = require('helmet')
     app = express()
     flash = require("connect-flash")
     require("dotenv").config().parsed;
     
-
+app.use(helmet())
+    
 app.use(flash())
 app.use(require("express-session")({
     secret: "I am cool",
