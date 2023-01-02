@@ -1,3 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: black;
+}
+
+html {
+    height: 100%;
+}
+
+/* loading page before loading actual portfolio website */
 #loading-screen{
     background: black;
     opacity: 1;
@@ -5,7 +18,7 @@
     z-index: 100;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 #loader {
@@ -39,36 +52,127 @@
     animation: spin 1.5s linear infinite;
   
   }
-
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
 }
-
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: white
+/* green laggy ball undor cursor */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid green;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
 }
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+/* pulse animation of two circles on landing page */
+#follower{
+    position: absolute;
+    top: 40%;
+    left: 50%
+}
+#circle1{
+    position: absolute;
+    -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
+    animation: pulse 2s infinite;
+    background: white;
+    border-radius: 50%;
+    height: 0em;
+    width: 0em;
+    margin-top: 0em;
+    margin-left: 0em
+}
+  
+#circle2{
+    position: absolute;
+    -webkit-animation: pulse 4s infinite; /* Chrome, Safari, Opera */
+    animation: pulse 4s infinite;
+    background: rgba(4,194,201,0.8);
+    border-radius: 50%;
+    height: 0em;
+    width: 0em;
+    margin-top: 0em;
+    margin-left: 0em
+}
+
+@keyframes pulse{
+    0%{ 
+        opacity: 0.2;
+        height: 1em;
+        width: 1em;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
+    }
+   
+    50%{
+        opacity: 0.9;
+        height: 3em;
+        width: 3em;
+        margin-top: -1.5em;
+        margin-left: -1.5em;
+    }
+   
+  100%{
+    opacity: 0.2;
+    height: 1em;
+    width: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em
+  } 
+}
+
 html{
     scroll-behavior: smooth;
     
 }
+
+/* invisible scroll-bars */
 .overflow{
     overflow: hidden;
 }
+
+/* landing page animation panel */
 #canvas{
     height: 100%;
     overflow: hidden;
     background: black
 }
-html {
-    height: 100%;
-}
 
+
+/* landing page text design */
 #title {
     position: absolute;
     top: 50%;
@@ -89,6 +193,7 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
+/* landing page background animation */
 #stars {
     width: 1px;
     height: 1px;
@@ -646,6 +751,7 @@ html {
 }
 
 
+
 @keyframes animStar {
     from {
         transform: translateY(0px);
@@ -654,94 +760,24 @@ html {
         transform: translateY(-2000px);
     }
 }
-.header {
-    position: fixed;
-    top: 57px;
-    z-index: 1;
-    width: 100%;
-  }
-.progress-container {
-    width: 100%;
-    height: 8px;
-  }
-  
-  .progress-bar {
-    height: 8px;
-    background: #04C2C9;
-    width: 0%;
-  }
-  
-  .content {
-    padding: 100px 0;
-    margin: 50px auto 0 auto;
-    width: 80%;
-  }
-#BloggersIncimage{
-    background-image: url("/Images/BloggersInc.PNG");
-}
-#CampInsidersimage{
-    background-image: url("/Images/CampInsiders.PNG");
-}
-#GameConimage{
-    background-image: url("/Images/GameCon.PNG");
-}
-#Handimage{
-    background-image: url("/Images/prosthetic.png");
-}
-.projectcard{
-    height: 300px;
-    width: 100%;
-    margin: auto;
-    background-size: cover;
-    background-position: center;
-    overflow-y: hidden;
-  }
-  
-  .projecttext{
-    background: rgba(0, 0, 0, .8);
-    margin: 0;
-    margin-top: 38%;
-    transition: 1s;
-    letter-spacing: 0;
-    color: #04C2C9;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-  }
-  .projectbody {
-    background: rgba(0, 0, 0, .8);
-    margin-top: 0;
-    height:100%
-  }
-  
-  .hover{
-    margin-top: 0;
-  }
-
-i.icon.user.circle:before {
-    color: #DC143C;
-}
-i.icon.chart.line:before {
-    color: #DC143C;
-}
-body{
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-}
-i.icon.chart.bar:before {
-    color: #DC143C;
-}
-i.icon.comments.outline:before {
-    content: "\f086";
-    color: red;
-}
-.zero{
-    width: 0
-}
 * {box-sizing:border-box}
+
+/* make sticky navbar opaque */
+.highz{
+    z-index: 2;
+}
+.nav-link{
+    background-color: black;
+}
+/* make the navbar fixed-top after scrolling past it */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white
+}
 
 .container1 {
   width: 100%; 
@@ -749,46 +785,182 @@ i.icon.comments.outline:before {
   border-radius: 5px;
 }
 .active{
-    border-bottom: 2px solid blue
+    border-bottom: 5px solid #04C2C9
 }
-.skills {
-  text-align: right; 
-  padding-top: 3px; 
-  padding-bottom: 3px; 
-  color: white; 
-  border-radius: 5px
+
+/* Learn more about me button customised */
+#introBtn{
+    padding: 20px; 
+    border-radius: 100px; 
+    font-size: 20px; 
+    background-color: black; 
+    color: whitesmoke;
+    margin: 0 auto; 
+    outline: 0;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
 }
+#introBtn:hover {
+    box-shadow: inset 300px 0 0 0 #04C2C9;
+    cursor: crosshair;
+}
+
+/* right pointing arrow changing to downward arrow animated on landing page */
+.arrow-right{
+    border: solid white;
+    border-width: 2px 2px 0 0;
+    display: inline-block;
+    padding: 8px;
+    margin-left: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: transform 0.3s linear;
+}
+.arrow-right.arrow-downs{
+    transform: rotate(135deg);
+}
+
+/* 4 arrows animation on landing page */
+.arrow-down {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    opacity: 1;
+}
+.arrow-container{
+    margin-bottom: 0;
+    border: solid #04C2C9;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+    transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  }
+#arrow-1{
+    opacity: 0.4;
+    animation: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+#arrow-2{
+    opacity: 0.4;
+    animation: blink_2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+#arrow-3{
+    opacity: 0.4;
+    animation: blink_3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+#arrow-4{
+    opacity: 0.4;
+    animation: blink_4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    25%,75%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes blink_2{
+    0%{
+        opacity: 0.4;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%,100%{
+        opacity: 0.4;
+    }
+}
+@keyframes blink_3{
+    0%,25%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%,100%{
+        opacity: 0.4;
+    }
+}
+@keyframes blink_4{
+    0%,50%{
+        opacity: 0.4;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.4;
+    }
+}
+
 .alert-success {
     color: #155724;
     background-color: #d4edda;
     border-color: #c3e6cb;
-    margin-top: 65px;
 }
 .nav-link {
     display: block;
     padding: .5rem 1rem;
     color: rgba(255,255,255,.5);
 }
-  ::-webkit-scrollbar {
+
+/* custom scrollbars */
+::-webkit-scrollbar {
     width: 13px;
-  }
+}
   
   /* Track */
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
     border-radius: 2px;
-  }
+}
    
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: grey; 
     border-radius: 2px;
-  }
+}
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: grey; 
+}
+
+/* projects-navbar */
+.col-3.project-navbar{
+    color: white;
+}
+.col-3.project-navbar:hover{
+    text-decoration: none;
+}
+.col-3.project-navbar.active{
+    background-color: #04C2C9;
+}
+/* skills panel */
+.skills {
+    text-align: right; 
+    padding-top: 3px; 
+    padding-bottom: 3px; 
+    color: white; 
+    border-radius: 5px
   }
+/* skills-bar loading animation */
 .html {width: 90%; background-color: #04C2C9;} 
 .bootstrap4{width: 80%; background-color: #04C2C9;}
 .css {width: 75%; background-color: #04C2C9;} 
@@ -796,6 +968,7 @@ i.icon.comments.outline:before {
 .nodejs{width: 80%; background-color:#04C2C9;}
 .mongodb{width: 70%; background-color:#04C2C9;}
 .python{width: 75%; background-color:#04C2C9;}
+.cc{width: 70%; background-color:#04C2C9;}
 .zero{
     width: 0%
 }
@@ -808,7 +981,7 @@ i.icon.comments.outline:before {
     }
 }
 .html{
-    animation: html 2s
+    animation: html 2s;
 }
 @keyframes bootstrap4{
     0%{
@@ -876,114 +1049,26 @@ i.icon.comments.outline:before {
 .python{
     animation: python 2s
 }
-#follower{
-    position: absolute;
-    top: 40%;
-    left: 50%
-}
-#circle1{
-    position: absolute;
-      -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
-      animation: pulse 2s infinite;
-      background: white;
-      border-radius: 50%;
-      height: 0em;
-      width: 0em;
-      margin-top: 0em;
-      margin-left: 0em
-}
-  
-  #circle2{
-    position: absolute;
-    -webkit-animation: pulse 4s infinite; /* Chrome, Safari, Opera */
-    animation: pulse 4s infinite;
-    background: rgba(4,194,201,0.8);
-    border-radius: 50%;
-    height: 0em;
-    width: 0em;
-    margin-top: 0em;
-    margin-left: 0em
-  }
-
-@keyframes pulse{
-    0%{ 
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
+@keyframes cc{
+    0%{
+        width: 0%
     }
-   
-    50%{
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-    }
-   
-  100%{
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em
-  }
-    
-}
-.btn-danger{
-    cursor: crosshair
-}
-.cursor {
-    width: 20px;
-    height: 20px;
-    border: 1px solid green;
-    border-radius: 50%;
-    position: absolute;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
-    animation: cursorAnim .5s infinite alternate;
-    pointer-events: none;
-}
-
-@keyframes cursorAnim {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(.7);
+    100%{
+        width: 70%
     }
 }
-@keyframes cursorAnim3 {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(3);
-    }
-    100% {
-        transform: scale(1);
-        opacity: 0;
-    }
+.cc{
+    animation: cc 2s
 }
-
-.expand {
-    animation: cursorAnim3 .5s forwards;
-    border: 1px solid red;
-}
-
-.btn-outline-danger{
-    cursor: crosshair;
-}
-.btn-primary{
-    cursor: crosshair;
-}
+/* change cursor type on a-links */
 a {
     cursor: crosshair;
 }
 .navbar-dark .navbar-toggler {
     cursor: crosshair;
 }
+
+/* popups design code */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -995,10 +1080,10 @@ a {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+}
   
   /* Modal Content/Box */
-  .modal-content {
+.modal-content {
     background-color: black;
     border: 1px solid black;
     margin: 5% auto; /* 15% from the top and centered */
@@ -1006,25 +1091,27 @@ a {
     padding-top: 0;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
-  }
+}
   
   /* The Close Button */
-  .close {
+.close {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
     margin-right: 20px;
     margin-top: 20px;
-  }
+}
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
-  .card-header-none{
+}
+
+/* fade-in effect on all the sections of website in viewport */
+.card-header-none{
     opacity: 0
 }
 .card-header{
@@ -1063,16 +1150,56 @@ a {
         opacity: 1;
     }
 }
+
+/* zoomed effect on skill images */
 .skills-image{
     transition: all 300ms;
 }
 .skills-image:hover{
     transform: scale(1.3);
 }
-body{
-    background: black;
+
+/* project images and hover-overlay-slide-in effect */
+.img-container{
+    position: relative;
+    width: 100%;
 }
-.btn-outline-danger:hover {
+.image {
+    display: block;
+    width: 100%;
+    height: 200px;
+  }
+.col-6{
+    padding: 0;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .8);
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    transition: .5s ease;
+}
+  
+.img-container:hover .overlay {
+    height: 100%;
+}
+  
+.text {
     color: white;
-    background-color:white;
+    font-size: 20px;
+    position: absolute;
+    top: 2px;
+    left:0;
+    right:0;
+    line-height: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.title{
+    color: #04C2C9
 }

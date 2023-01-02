@@ -26,18 +26,6 @@ app.use(function(req, res, next){
 app.get("/", function(req, res){
   res.render("portfolio")
 })
-app.get("/projectcards/BloggerInc", function(req, res){
-    res.render("./projectcards/BloggerInc")
-})
-app.get("/projectcards/CampInsiders", function(req, res){
-  res.render("./projectcards/CampInsiders")
-})
-app.get("/projectcards/GameCon", function(req, res){
-  res.render("./projectcards/GameCon")
-})
-app.get("/projectcards/ProstheticHand", function(req, res){
-  res.render("./projectcards/ProsthethicHand")
-})
 
 app.post("/email", function(req, res){
     var transporter = nodemailer.createTransport({
@@ -75,3 +63,7 @@ app.get('/favicon.ico', function(req, res){
 app.listen(process.env.PORT,process.env.IP, function(){
     console.log("server starts")
 })
+
+// app.listen(3000, function(){
+//   console.log("server starts")
+// })
