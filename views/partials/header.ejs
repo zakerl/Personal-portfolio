@@ -1,39 +1,52 @@
 <html class="overflow">
     <head>
         <title>Labeeb Hasan Zaker</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="/stylesheets/app.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <div id="loading-screen"><div id="loader"></div></div>
-    <div class="container">
-      <% if(success && success.length > 0){ %>
-          <div class="alert alert-success" role="alert">
-              <%= success %>
-          </div>
-      <% } %>
-    </div>
-    <div id="follower" style="padding: 0px">
-      <div id="circle1"></div>
-      <div id="circle2"></div>
-    </div>
-    <div id="canvas">
-      <section class="wrapper">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-          <div id="title">
-              <span></span>
-              <br>
-              <br>
-              <span style="margin-top: 30px;font-size: 24px;">Labeeb Hasan Zaker - Mechatronics Engineer || Full Stack Developer</span>
-              <br>
-          </div>
-      </section>
+    <div>
+      <div class="container">
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+      </div>
+      <div id="follower" style="padding: 0px; top:30%">
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+      </div>
+      <div id="canvas">
+        <section class="wrapper" style="width: 100vw;">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="title" style="top: 40%;">
+                <span></span>
+                <br>
+                <br>
+                <span style="margin-top: 30px;font-size: 24px;">Labeeb Hasan Zaker - Mechatronics Engineer || Full Stack Developer</span>
+                <br>
+                <p></p>
+                <a href="#intro"><button id="introBtn">Learn more about me <i class="arrow-right"></i></button></a>
+            </div>
+            <div style="position: absolute; left: 50%; bottom: 1px;">
+              <a href="#intro"  style="position: relative; left: -50%; bottom: 20px;">
+                <p class="arrow-container"><i class="arrow-down"></i></p>
+                <p class="arrow-container"><i class="arrow-down"></i></p>
+                <p class="arrow-container"><i class="arrow-down"></i></p>
+                <p class="arrow-container"><i class="arrow-down"></i></p>
+              </a>
+            </div>
+        </section>
+      </div>
     </div>
     <body data-spy="scroll" data-target=".navbar" data-offset="100">
-        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: black;">
+      <div id="nav-wrapper" style="height: 56px; background-color: black; width: 100%">
+        <nav id="navbar"class="navbar navbar-expand-lg navbar-dark" style="height: 56px;background-color: black;width: 100%;">
           <div class="container">
               <a class="navbar-brand" href="#">Labeeb</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,10 +79,6 @@
               </div>
           </div>
         </nav>
-      <div class="header">
-        <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
-        </div> 
       </div>
         
         <div class="cursor"></div>
