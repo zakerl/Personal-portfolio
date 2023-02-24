@@ -9,7 +9,7 @@ require("dotenv").config().parsed;
 app.use(helmet())
 
 app.use(flash())
-app.use(require("express-session")({
+app.use(require("cookie-session")({
   secret: "I am cool",
   resave: false,
   saveUninitialized: false
