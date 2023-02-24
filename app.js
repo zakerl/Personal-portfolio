@@ -61,10 +61,10 @@ app.get('/favicon.ico', function (req, res) {
   res.status(204)
 });
 
-// app.listen(process.env.PORT, process.env.IP, function () {
+app.listen(process.env.PORT, process.env.IP, function () {
+  console.log(process.env.PORT, process.env.IP)
+})
+
+// app.listen(3000, function () {
 //   console.log("server starts")
 // })
-
-app.listen(3000, function () {
-  console.log("server starts")
-})
