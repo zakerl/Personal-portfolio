@@ -12,11 +12,6 @@ body {
     color: white;
 }
 
-.dark-mode {
-    background-color: white;
-    color: black;
-}
-
 html {
     height: 100%;
 }
@@ -1009,10 +1004,6 @@ html {
 }
 
 /* projects-navbar */
-.col-3.project-navbar {
-    color: white;
-}
-
 .col-3.project-navbar:hover {
     text-decoration: none;
 }
@@ -1368,7 +1359,7 @@ a {
 }
 
 
-label {
+#darkLightMode {
     position: absolute;
     width: 100%;
     height: 30px;
@@ -1378,7 +1369,7 @@ label {
     padding-top: 2px;
 }
 
-input {
+#slider-check {
     position: absolute;
     display: none;
     border-color: white;
@@ -1393,12 +1384,7 @@ input {
     border-style: solid;
     border-color: white;
     padding-bottom: 30px;
-}
-
-input:checked~.slider {
-    background-color: var(--light);
-    border-style: solid;
-    border-color: black;
+    padding-right: 16px;
 }
 
 .slider::before {
@@ -1409,13 +1395,36 @@ input:checked~.slider {
     width: 30px;
     height: 20px;
     border-radius: 70%;
-    box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 10px -4px 0px 0px var(--light);
     background-color: var(--dark);
     transition: 0.3s;
 }
 
-input:checked~.slider::before {
+#slider-check:checked~.slider::before {
     transform: translateX(20px);
-    background-color: var(--dark);
-    box-shadow: none;
+    box-shadow: 0 0 10px orange,
+        0 0 60px orange,
+        0 0 200px yellow,
+        inset 0 0 80px yellow;
+}
+
+.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+.tech-used {
+    background-color: white;
+    border-radius: 7px;
+    padding: 8px;
+    color: black;
+}
+
+.light-mode-techs {
+    background-color: black;
+    color: white;
+}
+
+.close-light {
+    color: black;
 }

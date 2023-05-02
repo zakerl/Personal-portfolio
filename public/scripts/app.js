@@ -1,6 +1,21 @@
 function changeMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
+
+  var modals = document.getElementsByClassName("modal-content")
+  for (var i = 0; i < modals.length; i++) {
+    modals.item(i).classList.toggle("dark-mode");
+  }
+
+  var techLabels = document.getElementsByClassName("tech-used")
+  for (var i = 0; i < techLabels.length; i++) {
+    techLabels.item(i).classList.toggle("light-mode-techs");
+  }
+
+  var closeBtn = document.getElementsByClassName("close")
+  for (var i = 0; i < closeBtn.length; i++) {
+    closeBtn.item(i).classList.toggle("close-light");
+  }
 }
 window.addEventListener("load", function () {
   setTimeout(function () {
