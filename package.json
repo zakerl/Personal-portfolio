@@ -14,7 +14,7 @@
     "helmet": "^3.21.2",
     "imap": "^0.8.19",
     "nodemailer": "^6.3.0",
-    "nodemailer-mailgun-transport": "^1.4.0",
+    "nodemailer-mailgun-transport": "^2.1.5",
     "nodemailer-sendgrid-transport": "^0.2.0",
     "semantic-ui-icon": "^2.3.3",
     "serve-favicon": "^2.5.0",
